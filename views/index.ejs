@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Get the current weather of any city at any time!</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <h2>Know the current weather of any city in just a click!</h2>
+        </header>
+        <form action="/" method="post">
+            <input name="city" type="text" class="city-input" placeholder="Enter a city" required="">
+            <input type="submit" class="btn" value="Get Weather">
+            <% if(weather !== null){ %>
+              <h2>Current Weather :-</h2>
+              <p><%= today %></p>
+              <p><%= weather %></p>
+              <p><%= temp %></p>
+              <p><%= condition %></p>
+              <p><%= humidity %></p>
+              <p><%= wind %></p>
+            <% } %>
+            
+            <% if(error !== null){ %>
+              <p><%= error %></p>
+            <% } %>
+        </form>
+        
+    </div>
+
+</body>
+</html>

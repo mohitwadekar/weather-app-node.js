@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url(../img/weather-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin-bottom: 35px;
+}
+
+header h1{
+    text-shadow: 2px 2px #777676;
+}
+
+form{
+    box-sizing: border-box;
+    width: 370px;
+    /* min-height: 200px; */
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(135, 206, 250, 0.3);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+form h2{
+    margin: 0 auto 10px;
+    color: black;
+}
+
+form p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px #d3d3d3;
+}
+
+form input{
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.city-input{
+    background-color: #d3d3d3;
+}
+
+.btn{
+    background-color: #d3d3d3;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 125px;
+    margin: auto;
+    margin-bottom: 10px;
+}
